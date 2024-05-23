@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkutor Simpel | By EV</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/pricing/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <main class="form-signin justify-content-center my-5 mx-auto">
+        <form>
+            <h1 class="h3 mb-3 fw-bold text-center">Kalkutor Simpel</h1>
+    
+            <div class="form-floating mb-2">
+                <input type="number" class="form-control" id="angka1" name="angka1" placeholder="name@example.com">
+                <label for="floatingInput">Bilangan Pertama</label>
+            </div>
+            <div class="form-floating">
+                <input type="number" class="form-control" id="angka2" name="angka2" placeholder="Password">
+                <label for="floatingPassword">Bilangan Kedua</label>
+            </div>
+            </form>
+        <table style="width: 100%; margin-top: 10px;">
+            <tbody>
+            <tr>
+            <td>
+                <div class="form-check text-start my-3 col">
+                <input class="form-check-input col" type="radio" id="jml" name="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Penjumlahan
+                </label>  
+                </div>
+            </td>
+            <td>
+                <div class="form-check text-start my-4 col">
+                    <input class="form-check-input col" type="radio" value="remember-me" id="kurang" name="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Pengurangan
+                    </label>
+                </div>
+            </td>
+            
+            </tr>
+            <tr>
+                
+                <td>
+                    <div class="form-check text-start my-4 col">
+                        <input class="form-check-input col" type="radio" value="remember-me" id="kali" name="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Perkalian
+                        </label>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-check text-start my-3 col">
+                        <input class="form-check-input col" type="radio" value="remember-me" id="bagi" name="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Pembagian
+                        </label>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+            <button class="btn btn-primary w-100 py-2" type="button" onclick="jumlah()">Hasil</button>
+            <button class="btn btn-primary w-100 py-2 mt-3" type="button" onclick="refresh()">Reset</button>
+            <p class="mt-5 mb-3 text-body-secondary fs-2 fw-bold"> Hasilnya:
+                <span id="hasil"></span>
+            </p>
+        
+    </main>
+    <script src="logic.js"></script>
+</body>
+</html>
